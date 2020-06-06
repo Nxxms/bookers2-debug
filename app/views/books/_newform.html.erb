@@ -1,3 +1,17 @@
+
+	<% if book.errors.any? %>
+  <h2><%= pluralize(book.errors.count, "error") %> prohibited this product from being saved:</h2>
+  <br>
+    <ul>
+      <% book.errors.full_messages.each do |message| %>
+      <li>
+        <%= message %>
+      </li>
+      <% end %>
+    </ul>
+   <% end %>
+
+
 <%= form_for(book) do |f| %>
 	<div class="field row">
 		<%= f.label :title %>

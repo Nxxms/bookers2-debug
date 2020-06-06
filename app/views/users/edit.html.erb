@@ -1,3 +1,7 @@
+<div class="container">
+  <div class="row">
+  	<div class="col-xs-3">
+
 <h2>User info</h2>
 
 <%= form_for(@user) do |f| %>
@@ -14,8 +18,8 @@
 <!-- エラーメッセージ表示-->
 
 <div class="field">
-	<%= f.label :title %>
-	<%= f.text_field :title, class: "name" %>
+	<%= f.label :name %>
+	<%= f.text_field :name, class: "name" %>
 </div>
 
 <div class="field">
@@ -33,3 +37,7 @@
 </div>
 
 <% end %>
+
+</div>
+</div>
+</div>

@@ -1,3 +1,6 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-3">
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -6,7 +9,7 @@
   <!--name表示の追加-->
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.name_field :name, autofocus: true, class: "name" %>
+    <%= f.text_field :name, autofocus: true, class: "name" %>
   </div>
   <!--name表示の追加-->
 
@@ -35,3 +38,7 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>
+</div>
+</div>

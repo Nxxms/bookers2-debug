@@ -1,3 +1,4 @@
+<div class="container">
 <div class="row">
 	<div class="col-xs-3">
 
@@ -6,12 +7,12 @@
 		<!--メモ　右側の指定に注意。そこを間違えるとエラーが発生して表示されない -->
 
 		<h2>New book</h2>
-		<%= render 'books/newform', book: @book %>
+		<%= render 'books/newform', book: @book_new %>
 
 	</div>
 
 	<div class="col-xs-9">
-		<h2>Books index</h2>
+		<h2>Books</h2>
 		<!--books一覧 -->
 		<table class="table table-hover table-inverse">
 			<thead>
@@ -42,4 +43,5 @@
 
 
 	</div>
+</div>
 </div>
